@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e9f2;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Tahoma;
+    font-weight: 400;
+    font-size: 1em;
+    color: #363636;
+}
+
+.mainBlock {
+    background-color: #ffffff;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /*width: 1170px;*/
+}
+
+#firstBlock {
+    text-align: center;
+}
+
+#photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+    display: inline-block;
+    margin-top: -75px;
+    background-color: #e5e9f2;
+}
+
+#photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#welcome h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+#welcome h1::first-line {
+    font-size: 1.5em;
+    letter-spacing: -4px;
+    font-weight: 800;
+    line-height: 1.5em;
+}
+
+#welcome h1 span {
+    color: #DC582A;
+}
+
+#welcome h1 sup {
+    opacity: 0.5;
+    top: -.5em;
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+    margin-left: 5px;
+}
+
+hr  {
+    border: 1px solid #363636;
+    opacity: 0.5;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+h2  {
+    color: #e2724c;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 16px;
+}
+
+.leftBlock {
+    padding-right: 30px;
+/*    border-right: 1px solid #363636;
+    border-right: 1px solid rgba(54,54,54, .5);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+*/
+}
+
+.leftBlock p {
+    font-size: 15px;
+    line-height: 1.2em;
+}
+
+/*.rightBlock {
+    padding-left: 15px;
+}*/
+
+#secondBlock, #thirdBlock  {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contactsType {
+    font-weight: 700;
+}
+
+.contactsDescription, .endSign  {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+/*#educationList::before  {
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 25px;
+    content: ' ';
+    display: block;
+    background: linear-gradient(to bottom, #ffffff 0%,#e2724c 7%,#e2724c 89%,#ffffff 100%);
+}*/
+#educationList  {
+    list-style: none;
+    position: relative;
+    padding: 0 0;
+}
+
+#educationList  li  {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    display: flex;
+}
+
+#educationList  .eduYear  {
+    width: 10%;
+    background: #fff;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+
+#educationList  .eduDesription  {
+    width: 90%;
+    display: inline-block;
+    background: #eee;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#educationList .eduDesription::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: -16px;
+    height: 0;
+    width: 0;
+    border: solid transparent;
+    border-right-color: #eee;
+    border-width: 8px;
+    pointer-events: none;
+}
+
+#educationList .eduDesription h3 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+#educationList .eduDesription p {
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.simpleList {
+    padding-inline-start: 20px;
+}
+
+.simpleList p {
+    font-size: 15px;
+}
+
+.jobRow {
+    display: flex;
+}
+.jobCircleLine  {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+}
+
+.jobNumberCircle  {
+    padding: 13px 0; /*Вкупе с контролируемым line-height(брался по размеру иконок, чтобы не отличалось) и размеров иконок можно расчитать (50-24)/2=13*/
+    border-radius: 50%;
+    background-color: #e2724c;
+    color: #f9fafc;
+    z-index: 2;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 24px;
+}
+
+.material-icons.md-18 {
+    font-size: 24px;
+}
+
+.jobLine  {
+    content: "";
+    position: relative;
+    border-left: 3px solid #e2724c;
+    z-index: 1;
+    height: 100%;
+    left: 47%;
+}
+
+.jobDesription h3 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.jobYears {
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.jobDesription p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.jobDesription a, .eduDesription a, .simpleList a, .contactsDescription a  {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.jobDesription a:hover, .eduDesription a:hover, .simpleList a:hover, .contactsDescription a:hover {
+    color: #2a6496;
+    text-decoration: underline;
+}
+
+.jobSimpleList p  {
+    margin: 0;
+}
+
+#projects .jobDesription  {
+    padding-bottom: 20px;
+}
+
+.projectScreens {
+    margin-top: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  /*width: 80%;*/
+  max-width: 1000px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1000px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 1000px){
+  .modal-content {
+    width: 100%;
+  }
+}
+.endSign {
+    text-align: center!important;
+}
+.endSignAtrribute {
+    text-align: center!important;
+    padding-bottom: 8px;
+    font-size: 10px;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .mainBlock  {
+        width: 1170px;
+    }
+    .leftBlock  {
+        width: 60%;
+    }
+    .rightBlock  {
+        width: 40%;
+    }
+    #langSkillsList {
+        margin-bottom: 0px !important;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+    .mainBlock  {
+        width: 750px;
+    }
+    #langSkillsList {
+        margin-bottom: 40px !important;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px)  {
+    .mainBlock  {
+        width: 970px;
+    }
+    #aboutMe  {
+        width: 60%;
+    }
+    #contact  {
+        width: 40%;
+    }
+    #langSkillsList {
+        margin-bottom: 40px !important;
+    }
+}
+
+.transitions  {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 16px;
+    padding-top: 8px;
+}
+
+.transitions h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.transitions a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.titleYears {
+    display: flex;
+}
+
+.titleYears h3  {
+    width: 87%;
+}
+
+.titleYears .jobYears {
+    width: 13%;
+    text-align: right;
+}
+
+#workExpirience .jobDesription {
+    padding-bottom: 25px;
+}
+
+#projects .jobDesription p {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.projPic  {
+    border: 1px solid #ddd;
+}
+
+.projPic:hover  {
+    cursor: pointer;
+    border: 1px solid #428bca;
+}
+
+#skills ul {
+    margin-bottom: 40px;
+}
