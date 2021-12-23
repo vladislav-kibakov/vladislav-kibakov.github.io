@@ -139,20 +139,20 @@ h2  {
     display: block;
     background: linear-gradient(to bottom, #ffffff 0%,#e2724c 7%,#e2724c 89%,#ffffff 100%);
 }*/
-#educationList  {
+#educationList, #educationListTraining  {
     list-style: none;
     position: relative;
     padding: 0 0;
 }
 
-#educationList  li  {
+#educationList  li, #educationListTraining li  {
     width: 100%;
     z-index: 2;
     position: relative;
     display: flex;
 }
 
-#educationList  .eduYear  {
+#educationList  .eduYear, #educationListTraining .eduYear  {
     width: 10%;
     background: #fff;
     padding: 10px;
@@ -164,7 +164,7 @@ h2  {
 }
 
 
-#educationList  .eduDesription  {
+#educationList  .eduDesription, #educationListTraining .eduDesription  {
 /*    width: 90%;*/
     flex-grow: 1;
     display: inline-block;
@@ -175,7 +175,7 @@ h2  {
     border-bottom: 1px solid #ddd;
 }
 
-#educationList .eduDesription::after {
+#educationList .eduDesription::after, #educationListTraining .eduDesription::after {
     content: '';
     position: absolute;
     top: 15px;
@@ -189,14 +189,14 @@ h2  {
     pointer-events: none;
 }
 
-#educationList .eduDesription h3 {
+#educationList .eduDesription h3, #educationListTraining .eduDesription h3 {
     font-size: 16px;
     margin: 0;
     padding: 0;
     font-weight: 700;
 }
 
-#educationList .eduDesription p {
+#educationList .eduDesription p, #educationListTraining .eduDesription p {
     font-size: 15px;
     margin-top: 5px;
     padding: 0;
