@@ -165,7 +165,8 @@ h2  {
 
 
 #educationList  .eduDesription  {
-    width: 90%;
+/*    width: 90%;*/
+    flex-grow: 1;
     display: inline-block;
     background: #eee;
     margin-bottom: 10px;
@@ -391,6 +392,18 @@ h2  {
     #langSkillsList {
         margin-bottom: 40px !important;
     }
+    #education, #workExpirience, #projects  {
+        padding-right: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #langSkillsList {
+        margin-bottom: 40px !important;
+    }
+    #education, #workExpirience, #projects  {
+        padding-right: 0px !important;
+    }
 }
 
 
@@ -406,6 +419,9 @@ h2  {
     }
     #langSkillsList {
         margin-bottom: 40px !important;
+    }
+    #education, #workExpirience, #projects  {
+        padding-right: 0px !important;
     }
 }
 
@@ -466,4 +482,8 @@ h2  {
 
 #skills ul {
     margin-bottom: 40px;
+}
+
+#workExpirience .jobCircleLine {
+    padding-right: 0px !important;
 }
